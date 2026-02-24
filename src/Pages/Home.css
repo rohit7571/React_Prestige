@@ -1,0 +1,61 @@
+/* Home Page Container */
+.home-container {
+  padding: 40px;
+  min-height: 80vh;
+  background: linear-gradient(to right, #f8fafc, #e2e8f0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.home-container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* Card Styling for Child Components */
+.child-card {
+  background-color: white;
+  width: 350px;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.child-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Student List */
+.student-list {
+  list-style: none;
+  padding: 0;
+}
+
+.student-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 16px;
+  color: #334155;
+}
+
+.student-list li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .child-card {
+    width: 90%;
+  }
+
+  .home-container h1 {
+    font-size: 28px;
+  }
+}

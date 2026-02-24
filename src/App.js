@@ -4,27 +4,27 @@ import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-
+import "./App.css";
 
 function App() {
   
-  return (
-    <BrowserRouter>
+ return (
+  <BrowserRouter>
+    <div className="app-container"> 
       <Header/>
 
-      <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/contact' element={<Contact/>}/>
-
-      </Routes>
-
-
+      <main>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+      </main>
 
       <Footer/>
-    </BrowserRouter>
-    
-  );
+    </div>
+  </BrowserRouter>
+);
 }
 
 export default App;
